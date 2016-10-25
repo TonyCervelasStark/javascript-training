@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Starting JS</title>
+
 </head>
 <body>
 
+<h1>Hello Javascript</h1>
+
+<p>You are so nice !</p>
+
 </body>
+
+<script type="text/javascript" src="http://underscorejs.org/underscore.js">
+</script>
+
+<script type="text/javascript">
+    function fact(x) {
+        var result = 1;
+
+        if (x < 0) {
+            return "ERREUR ! Le nombre doit être supérieur ou égal à 0.";
+        }
+
+        else if (x == 0) {
+            return 1;
+        }
+
+        for (var i = 1; i < x + 1; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    console.log(fact(5));
+
+</script>
+
 </html>
