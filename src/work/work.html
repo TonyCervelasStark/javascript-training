@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Displaying Amazing Work</title>
 </head>
 <body>
-$END$
+<h1>Recherche des commentaires comportant le mot :</h1>
+
+<p>Résultats :</p>
+
+<form onsubmit="displaySearchValue(); return false">
+    <input type="search" class="search">
+    <button type="button">Search</button>
+</form>
+
+<section class="search" style="font-size: 20px; color : green;">
+
+</section>
+
+<footer>Ceci est un footer</footer>
 </body>
+<script src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="work.js"></script>
+<script src="jquery-event.js"></script>
+
+
+<!-- <script>
+    const contents=search('it');
+    contents.forEach(function (content){
+        const node = document.createTextNode(content);
+        document.querySelector('body').appendChild(node);
+    })
+</script> -->
+
 </html>

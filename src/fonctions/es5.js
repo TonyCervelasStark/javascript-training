@@ -65,7 +65,7 @@ var sortFunction = function (a, b) {
     return a < b ? -1 : 1;
 };
 
-var filteredPenny = topics.filter(function (topic) {
+topics.forEach(function (topic) {
     return topic.comments.forEach(function (comment) {
         if (comment.user.name === 'Penny') {
             pennyComment.push(comment.id)
